@@ -1,0 +1,342 @@
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #e6f7ff; /* Lighter Blue */
+}
+
+header {
+    background-color: #3498db; /* Main Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #b3e0ff; /* Lighter Blue for Our Services section */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background-color: #2980b9; /* Darker Blue */
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery img {
+    max-width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.about {
+    background-color: #2980b9; /* Darker Blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.service {
+    flex: 0 0 auto; /* Ensure equal width for each service */
+    margin-right: 20px; /* Adjust spacing between services */
+}
+
+.service:last-child {
+    margin-right: 0; /* Remove margin from the last service */
+}
+
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+.service h3,
+.service p {
+    padding: 10px;
+    text-align: center;
+}
+
+.testimonials {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ecf0f1; /* Lighter Blue */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.patient-name {
+    font-style: italic;
+}
+
+.mission-vision {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #cce0ff; /* Lighter Blue */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-vision-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+.column h3 {
+    color: #2980b9; /* Darker Blue */
+}
+
+
+.story-of-nurses {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #cce0ff; /* Lighter Blue */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-image {
+    width: 48%; /* Adjust the width as needed, leaving some space for margin */
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ... (remaining CSS code) ... */
+/* ... (previous CSS code) ... */
+
+.services {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #b3e0ff; /* Lighter Blue for Our Services section */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+./* ... (previous CSS code) ... */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.service {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.side-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+	
+	}
+
+footer {
+    background-color: #2980b9; /* Darker Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info,
+.social-media {
+    flex: 1;
+}
+
+.social-media a {
+    display: block;
+    margin-top: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+<section class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <img src="images/service1.jpg" alt="Service 1" class="service-image">
+                <h3>Service 1</h3>
+                <p>Description of Service 1.</p>
+            </div>
+            <div class="service">
+                <img src="images/service2.jpg" alt="Service 2" class="service-image">
+                <h3>Service 2</h3>
+                <p>Description of Service 2.</p>
+            </div>
+            <div class="service">
+                <img src="images/service3.jpg" alt="Service 3" class="service-image">
+                <h3>Service 3</h3>
+                <p>Description of Service 3.</p>
+            </div>
+            <div class="service">
+                <img src="images/service4.jpg" alt="Service 4" class="service-image">
+                <h3>Service 4</h3>
+                <p>Description of Service 4.</p>
+            </div>
+            
+            <!-- Add more services as needed -->
+
+            <img src="images/left-side-image.jpg" alt="Left Side Image" class="side-image">
+            <img src="images/right-side-image.jpg" alt="Right Side Image" class="side-image">
+        </div>
+    </section>
+	
+	<style>
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #333;
+        color: #fff;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+
+ @media only screen and (max-width: 600px) {
+            section {
+                padding: 10px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+
+            .responsive-img {
+                max-width: 100%;
+                height: auto;
+}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nursing Table</h1>
+    </header>
+
+    <section>
+        <h2>Nursing Information</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Registered Nurse</td>
+                    <td>5 years</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>LPN</td>
+                    <td>3 years</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
